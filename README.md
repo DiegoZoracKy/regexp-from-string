@@ -16,19 +16,23 @@ To use it on a Browser, without a build system, just include the file `lib/regex
 ## Usage
 
 **Creating a RegExp**
+
 `RegExpFromString()`;
 
 ```javascript
 const RegExpFromString = require('regexp-from-string');
+
 const regExp = RegExpFromString(`/Rock/ig`);
 // `regExp` is the same as RegExp(/Rock/ig);
 ```
 
 **Finding many RegExps at a String**
+
 `RegExpFromString.findAll()`;
 
 ```javascript
 const RegExpFromString = require('regexp-from-string');
+
 const regExps = RegExpFromString.findAll(`/Rock/ /and|n/i /Roll$/g`);
 // `regExps` will be the array [/Rock/, /and|n/i, /Roll$/g]
 // Each value is a RegExp Object
@@ -42,11 +46,14 @@ RegExpFromString.findAll(`/Rock/#$!$%/and|n/i  #&*E*& O#)/Roll$/g`);
 ```
 
 **Get all the matches for the many RegExps found at a String**
+
 `RegExpFromString.matchAll()`;
 
 ```javascript
-// It behaves like findAll, but in this case, it will return the RegExp `match` instead of the RegExp itself
+// It behaves like findAll, but in this case
+// it will return an Array with all the RegExp `match` instead of the RegExp itself
 const RegExpFromString = require('regexp-from-string');
+
 const regExps = RegExpFromString.matchAll(`/Rock/ /and|n/i /Roll$/g`);
 // regExps will be:
 [
