@@ -1,6 +1,6 @@
 {
   "name": "regexp-from-string",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Creates RegExp from a string, e.g. `/string/gi` and provides some utils to work with RegExp as strings, for example, to extract multi RegExps defined within a same string, e.g. `/Rock/, /and/, /roll/i`.",
   "main": "lib/regexp-from-string.js",
   "scripts": {
